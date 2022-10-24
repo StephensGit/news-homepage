@@ -8,31 +8,53 @@ import MainStory from "./components/MainStory";
 import SideStories from "./components/SideStories";
 import StoryItem from "./components/StoryItem";
 
+import image1 from "./images/image-retro-pcs.jpg";
+import image2 from "./images/image-top-laptops.jpg";
+import image3 from "./images/image-gaming-growth.jpg";
+
+const storyItemsData = [
+  {
+    heading: "01",
+    subHeading: "Reviving Retro PCs",
+    body: "What happens when old PCs are given modern upgrades?",
+  },
+  {
+    heading: "01",
+    subHeading: "Top 10 Laptops of 2022",
+    body: "Our best picks for various needs and budgets.",
+  },
+  {
+    heading: "01",
+    subHeading: "The Growth of Gaming",
+    body: "How the pandemic has sparked fresh opportunities.",
+  },
+];
+
 function App() {
   return (
     <div className="App">
       <Grid
-        h="640px"
+        // h="640px"
         maxW="1110px"
         m="auto"
         templateRows="repeat(5, 1fr)"
         templateColumns="repeat(3, 1fr)"
         gap={4}
       >
-        <GridItem rowSpan={4} colSpan={2} bg="tomato">
+        <GridItem h="511px" rowSpan={4} colSpan={2}>
           <MainStory />
         </GridItem>
-        <GridItem rowSpan={4} colSpan={1} bg="papayawhip">
+        <GridItem h="511px" rowSpan={4} colSpan={1}>
           <SideStories />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="papayawhip">
-          <StoryItem />
+        <GridItem rowSpan={1} colSpan={1}>
+          <StoryItem image={image1} data={storyItemsData[0]} />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
-          <StoryItem />
+        <GridItem rowSpan={1} colSpan={1}>
+          <StoryItem image={image2} data={storyItemsData[1]} />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg="tomato">
-          <StoryItem />
+        <GridItem rowSpan={1} colSpan={1}>
+          <StoryItem image={image3} data={storyItemsData[2]} />
         </GridItem>
       </Grid>
     </div>
