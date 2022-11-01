@@ -15,9 +15,9 @@ const MainStory = () => {
           w="50%"
           as="h1"
           color="#00001A"
-          fontSize="6xl"
+          fontSize={{ base: "24px", md: "40px", lg: "56px" }}
           fontWeight="extrabold"
-          lineHeight="56px"
+          lineHeight={{ base: "40px", md: "56px", lg: "56px" }}
         >
           The Bright Future of Web 3.0?
         </Box>
