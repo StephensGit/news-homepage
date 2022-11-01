@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 
 import { Box, Center, Grid, GridItem } from "@chakra-ui/react";
-
+import { useMediaQuery } from "@chakra-ui/react";
 import MainStory from "./components/MainStory";
 import SideStories from "./components/SideStories";
 import StoryItem from "./components/StoryItem";
@@ -31,17 +31,18 @@ const storyItemsData = [
 ];
 
 function App() {
+  const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
   return (
     <div className="App">
       <Grid
         // h="640px"
-        maxW="1110px"
+        maxW={"1110px"}
         m="auto"
         templateRows="repeat(5, 1fr)"
         templateColumns="repeat(3, 1fr)"
         gap={4}
       >
-        <GridItem h="511px" rowSpan={4} colSpan={2}>
+        <GridItem h="511px" rowSpan={4} colSpan={[3, 3, 2]}>
           <MainStory />
         </GridItem>
         <GridItem h="511px" rowSpan={4} colSpan={1}>
