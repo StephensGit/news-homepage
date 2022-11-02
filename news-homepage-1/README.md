@@ -6,12 +6,12 @@ This is a solution to the frontend mentors [challenge]: (https://www.frontendmen
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Screenshot](#screenshot)
 
 ## Overview
 
@@ -21,9 +21,6 @@ The challenge is to build out this landing page and get it looking as close to t
 There is a folder called "design" containing the images I used to replicate the landing page.
 I built this using React, Typescript & Chakra UI.
 
-
-### Screenshot - Mobile version
-![Fylo landing page](https://user-images.githubusercontent.com/45046901/199576335-e35efec4-e5a9-46e9-b18b-3641a2ecfc12.png)
 
 ### Links
 
@@ -42,3 +39,6 @@ I built this using React, Typescript & Chakra UI.
 - Website - [Stephen Moran]
 - Linkedin - [Stephen Moran](https://www.linkedin.com/in/stephen-moran-/)
 - Github - [StephensGit](https://github.com/StephensGit)
+
+## Screenshot - Mobile version
+![Fylo landing page](https://user-images.githubusercontent.com/45046901/199576335-e35efec4-e5a9-46e9-b18b-3641a2ecfc12.png)
