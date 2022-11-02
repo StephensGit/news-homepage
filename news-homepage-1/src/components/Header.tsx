@@ -39,14 +39,14 @@ const Header = () => {
         my="28px"
       >
         <Image src={logo} width="45px" />
-        <Box
-          minW="441px"
-          display="flex"
-          flexDirection="row"
-          justifyContent="space-between"
-        >
-          {isLargerThan686 &&
-            LinkItems.map((link, i) => (
+        {isLargerThan686 && (
+          <Box
+            minW="441px"
+            display="flex"
+            flexDirection="row"
+            justifyContent="space-between"
+          >
+            {LinkItems.map((link, i) => (
               <Link
                 key={i}
                 fontSize="15px"
@@ -57,7 +57,8 @@ const Header = () => {
                 {link?.label}
               </Link>
             ))}
-        </Box>
+          </Box>
+        )}
 
         <Image
           src={menu}
