@@ -14,7 +14,6 @@ import {
 
 const MainStory = () => {
   const [isLargerThan686] = useMediaQuery("(min-width: 686px)");
-  console.log(isLargerThan686);
 
   return (
     <Box
