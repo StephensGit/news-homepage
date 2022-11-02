@@ -9,7 +9,6 @@ import {
   Text,
   Stack,
   useMediaQuery,
-  VStack,
 } from "@chakra-ui/react";
 
 const MainStory = () => {

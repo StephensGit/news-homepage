@@ -2,7 +2,7 @@ import React from "react";
 
 import "./App.css";
 
-import { Box, Drawer, DrawerContent, useDisclosure } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 import Header from "./components/Header";
 import MainStory from "./components/MainStory";
