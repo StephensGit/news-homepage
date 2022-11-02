@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./App.css";
-
 import { Box } from "@chakra-ui/react";
+
+import "./App.css";
 
 import Header from "./components/Header";
 import MainStory from "./components/MainStory";
