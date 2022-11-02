@@ -1,9 +1,10 @@
 import React from "react";
-// import logo from './logo.svg';
+
 import "./App.css";
 
-import { Box, Stack } from "@chakra-ui/react";
+import { Box, Drawer, DrawerContent, useDisclosure } from "@chakra-ui/react";
 
+import Header from "./components/Header";
 import MainStory from "./components/MainStory";
 import SideStories from "./components/SideStories";
 import StoryItem from "./components/StoryItem";
@@ -35,7 +36,11 @@ const storyItemsData = [
 
 function App() {
   return (
-    <Box className="App">
+    <Box className="App" mb="80px">
+      <Box px={4}>
+        <Header />
+      </Box>
+
       <Box
         px={4}
         display="flex"
@@ -50,6 +55,7 @@ function App() {
         <MainStory />
         <SideStories />
       </Box>
+
       <Box
         display="flex"
         flexDirection={{

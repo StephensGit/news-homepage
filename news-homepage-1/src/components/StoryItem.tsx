@@ -17,9 +17,9 @@ const StoryItem = ({ image, data }: ItemProps) => {
   return (
     <Stack
       flexDirection="row"
+      cursor="pointer"
       maxWidth={{ base: "auto", sm: "auto", md: "auto", lg: "350px" }}
       mt={{ base: "24px", sm: "24px", md: "24px", lg: "0" }}
-      // mr={data?.heading === "03" ? 0 : 5}
     >
       <Image
         width="100px"
@@ -45,6 +45,7 @@ const StoryItem = ({ image, data }: ItemProps) => {
           fontSize="18px"
           fontWeight="extrabold"
           lineHeight="24px"
+          _hover={{ textDecoration: "none", color: "#F15D51" }}
         >
           {data?.subHeading}
         </Heading>
